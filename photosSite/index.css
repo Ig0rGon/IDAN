@@ -39,3 +39,13 @@ nav {
   .nav-links li a:hover {
     color: #f4d03f;
   }
+
+.writting-page {
+  color: white;
+  text-align: center;
+  font-size: 130%;
+}
+
+section div {
+  background-color: red;
+}
