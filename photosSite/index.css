@@ -110,9 +110,6 @@ body {
   /* Individual Photo Card */
   .photo-card {
     display: flex;
-
-    /* flex-direction: column; /* Stack image and name */
-
     align-items: center; /* Center content horizontally */
     max-width: 400px; /* Limit card width */
     background-color: #2C2C2C; /* Card background */
