@@ -5,31 +5,48 @@ body {
 
 nav {
     background-color: #8E1616;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;       
-    padding: 10px 20px;
+    display: flex;     
     color: #EEEEEE;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-photo {
-    width: 8%;
+.nav-front {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-uga-logo {
+    width: 15%;
     object-fit: cover;
+    padding-right: 2%;
 }
 
 .logo_name {
-    font-size: 170%;
+    font-size: 200%;
     font-weight: bold;
 }
 
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-  }
+.nav-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-idan-logo {
+  width: 15%;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
   
   .nav-links li a {
+    padding-left: 10%;
+    padding-right: 10%;
     text-decoration: none;
     color: white;
     font-size: 16px;
