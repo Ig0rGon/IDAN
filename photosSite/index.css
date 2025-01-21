@@ -1,68 +1,105 @@
 body {
-    margin: 0;
-    background-color: #1D1616;
+  margin: 0;
+  background-color: #1D1616;
+  font-family: Arial, sans-serif;
 }
 
 nav {
-    background-color: #8E1616;
-    display: flex;     
-    color: #EEEEEE;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #8E1616;
+  color: #EEEEEE;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-front {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  gap: 15px;
 }
 
 .navbar-uga-logo {
-    width: 15%;
-    object-fit: cover;
-    padding-right: 2%;
+  height: 70px;
+  object-fit: contain;
 }
 
 .logo_name {
-    font-size: 200%;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 .nav-end {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
 }
 
 .navbar-idan-logo {
-  width: 15%;
-  object-fit: cover;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.navbar-idan-logo:hover {
+  transform: scale(1.1);
 }
 
 nav ul {
   display: flex;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
 }
 
-  
-  .nav-links li a {
-    padding-left: 10%;
-    padding-right: 10%;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s;
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  color: #f4d03f;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
   }
-  
-  .nav-links li a:hover {
-    color: #f4d03f;
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
   }
+  .nav-front, .nav-end {
+      justify-content: center;
+  }
+}
 
 .writting-page {
   color: white;
   text-align: center;
   font-size: 130%;
+  margin: 7%;
+  margin-top: 5%;
+
+  letter-spacing: 5px;
+  line-height: 250%;
+  font-size: x-large;
 }
 
 section div {
   background-color: red;
-}
