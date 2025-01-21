@@ -1,105 +1,157 @@
+/* General Body Styling */
 body {
-  margin: 0;
-  background-color: #1D1616;
-  font-family: Arial, sans-serif;
-}
-
-nav {
-  background-color: #8E1616;
-  color: #EEEEEE;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-front {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.navbar-uga-logo {
-  height: 70px;
-  object-fit: contain;
-}
-
-.logo_name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-.nav-end {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.navbar-idan-logo {
-  height: 50px;
-  object-fit: contain;
-  transition: transform 0.3s;
-}
-
-.navbar-idan-logo:hover {
-  transform: scale(1.1);
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 15px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  padding: 5px 10px;
-  transition: all 0.3s;
-  border-radius: 5px;
-}
-
-.nav-links li a:hover {
-  color: #f4d03f;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-      flex-direction: column;
+    margin: 0;
+    background-color: #1D1616;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
   }
-  nav ul {
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #8E1616;
+    color: #EEEEEE;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-front,
+  .nav-end {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-uga-logo,
+  .navbar-idan-logo {
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s;
+  }
+  
+  .navbar-idan-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #f4d03f;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+    }
+  
+    .nav-links {
       flex-direction: column;
       gap: 10px;
+    }
   }
-  .nav-front, .nav-end {
-      justify-content: center;
+  
+  /* Text Section */
+  .writting-page {
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-}
+  
+  /* Section Title */
+  section h1,
+  section h2 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Photo Card Container */
+.photo-card-container {
+    display: flex;
+    justify-content: center; /* Center all cards in the row */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between cards */
+    margin: 20px auto; /* Center the container */
+    max-width: 100%; /* Prevent horizontal overflow */
+  }
+  
+  /* Individual Photo Card */
+  .photo-card {
+    display: flex;
 
-.writting-page {
-  color: white;
-  text-align: center;
-  font-size: 130%;
-  margin: 7%;
-  margin-top: 5%;
+    /* flex-direction: column; /* Stack image and name */
 
-  letter-spacing: 5px;
-  line-height: 250%;
-  font-size: x-large;
-}
-
-section div {
-  background-color: red;
+    align-items: center; /* Center content horizontally */
+    max-width: 400px; /* Limit card width */
+    background-color: #2C2C2C; /* Card background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px; /* Add space around content */
+  }
+  
+  /* Image Styling */
+  .photo-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid black;
+    border-radius: 5%;
+    transition: transform 0.3s;
+  }
+  
+  .photo-card img:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  /* Name Below Image */
+  .photo-card-name {
+    text-align: center;
+    margin-top: 10px; /* Space between image and name */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .photo-card-container {
+      gap: 15px;
+    }
+  
+    .photo-card {
+      max-width: 150px; /* Smaller cards for mobile */
+    }
+  }
+  
