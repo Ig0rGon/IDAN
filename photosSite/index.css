@@ -135,7 +135,7 @@ body {
   /* Name Below Image */
   .photo-card-name {
     text-align: center;
-    margin-top: 10px; /* Space between image and name */
+    margin-top: 80px; /* Space between image and name */
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
