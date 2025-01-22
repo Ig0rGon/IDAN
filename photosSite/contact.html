@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Page</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-front">
+                <img src="images/nav_photos/UGAarch.png" alt="UGA ARCH LOGO" class="navbar-uga-logo">
+                <p class="logo_name">University of Georgia - Winter Edition</p>
+            </div>
+            <div class="nav-end">
+                <ul class="nav-links">
+                    <li><a href="#">Find Locations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <img src="images/nav_photos/IDAN_logo.webp" alt="IDAN LOGO" class="navbar-idan-logo">
+            </div>
+        </div>
+    </nav>
+    
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <h2>
+            Have questions, feedback, or just want to say hello? We'd love to hear from you! 
+            Use the form below to get in touch with us, and we’ll get back to you as soon as possible.
+        </h2>
+    
+        <form action="https://formsubmit.co/734e4ef8391b793c26b19e628847c7bc " method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+    
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yoursite.com/thank-you.html"> <!-- Change this to our thank you page -->
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>Note to self: remember to add links down here!</p>
+    </footer>
+
+
+</body>
+</html>
