@@ -13,11 +13,18 @@
         <div class="nav-container">
             <div class="nav-front">
                 <img src="images/nav_photos/UGAarch.png" alt="UGA ARCH LOGO" class="navbar-uga-logo">
-                <p class="logo_name">University of Georgia - Winter Edition</p>
+                <p class="logo_name">University of Georgia - Graduation Photo Spots</p>
             </div>
             <div class="nav-end">
                 <ul class="nav-links">
-                    <li><a href="#">Find Locations</a></li>
+                    <li class="dropdown">
+                        <a href="#">Find Locations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#north-campus-link">North Campus</a></li>
+                            <li><a href="#main-campus-link">South Campus</a></li>
+                            <li><a href="#featured-link">East Campus</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -52,7 +59,7 @@
     <section class="athens-campus">
         <h1>Winter Athens Campus</h1>
 
-        <p class="photo-card-name">North Campus</p> 
+        <p class="photo-card-name" id="north-campus-link">North Campus</p> 
         <div class="photo-card-container">
             <div class="photo-card">
                 <img src="images/campus_photos/IMG_8024.jpeg" alt="">
@@ -84,7 +91,7 @@
         </div>
 
 
-        <p class="photo-card-name">Main Campus</p>
+        <p class="photo-card-name" id="main-campus-link">Main Campus</p>
         <div class="photo-card-container">
             <div class="photo-card">
                 <img src="images/campus_photos/IMG_8003.jpeg" alt="">
@@ -113,7 +120,7 @@
         </div>
 
 
-        <p class="photo-card-name">Featured Spots</p>
+        <p class="photo-card-name" id="featured-link">Featured Spots</p>
         <div class="photo-card-container">
             <div class="photo-card">
                 <img src="images/campus_photos/IMG_7984.jpeg" alt="">
