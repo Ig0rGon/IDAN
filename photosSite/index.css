@@ -1,3 +1,9 @@
+/*  Styling for the links */
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
 /* General Body Styling */
 body {
     margin: 0;
@@ -282,5 +288,47 @@ body {
   color: #1D1616;
 }
 
+/* Footer styling */
+footer {
+  background-color: #1D1616;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #f4d03f;
+  text-decoration: none;
+  margin: 0 10px 0 50px;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.footer-names {
+  color: lightblue;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.footer-names:hover {
+  color:#f4d03f;
+  font-weight: bold;
+}
 
 
